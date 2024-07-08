@@ -21,7 +21,7 @@ def cek():
         print(f'''
               Kode-{kode_barang}
               Nama barang: {nama}
-              Harga Barang: {harga_barang}
+              Harga Barang: {float(harga_barang)}
               Stok: {stok}
               ''')
     
