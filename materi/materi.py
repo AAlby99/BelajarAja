@@ -71,3 +71,30 @@ a = True
 b = True
 c = a ^ b
 print(f'{a} xor {b} = {c}')
+
+print("\nbitwise")
+a = 5
+b = 9
+print(f"nilai: {a}, binary: {format(a,'08b')}")
+print(f"nilai: {b}, binary: {format(b,'08b')}")
+# or
+c = a | b
+print(f"nilai: {c}, binary: {format(c,'08b')}")
+# and
+c = a & b
+print(f"nilai: {c}, binary: {format(c,'08b')}")
+# xor
+c = a ^ b
+print(f"nilai: {c}, binary: {format(c,'08b')}")
+# not
+c = ~ a
+print(f"nilai: {c}, binary: {format(c,'08b')}")
+# shifting menggeser nilai biner
+print('\nnilai asli')
+print(f"nilai: {b}, binary: {format(b,'08b')}")
+print('ke kanan')
+c = b >> 2
+print(f"nilai: {c}, binary: {format(c,'08b')}")
+print('ke kiri')
+c = b << 2
+print(f"nilai: {c}, binary: {format(c,'08b')}")
