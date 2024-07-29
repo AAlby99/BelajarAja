@@ -1,4 +1,5 @@
 def edit(db):
+    print("----------------------------------------------------------------")
     des = int(input("\n1. tambah\n2. kurang\npilih: "))
     if des == 1:
         pengedit = input("Masukan Nama Pengedit: ")

@@ -5,6 +5,7 @@ from services.lihat import see
 from services.keluar import keluar
 from services.cari import search
 from services.history import history
+from services.hapus import delete
 
 def liat():
     connect = terkoneksi()
@@ -42,7 +43,7 @@ def start():
         return
     while True:
         print("\n\nHalo Selamat datang silakan pilih salah satu (takan 0 untuk berhenti)")
-        pilihan = int(input("1. Menambah\n2. Edit\n3. Lihat\n4. Cari\n5. History\nPilih: "))
+        pilihan = int(input("1. Menambah\n2. Edit\n3. Lihat\n4. Cari\n5. History\n6. Hapus Akun\nPilih: "))
         if pilihan == 1:
             inp(connect)    
         elif pilihan == 2:
@@ -53,6 +54,8 @@ def start():
             search(connect)
         elif pilihan == 5:
             penjelajahan()
+        elif pilihan == 6:
+            delete(connect)
         elif pilihan == 0:
             keluar()
             break

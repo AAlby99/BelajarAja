@@ -7,7 +7,6 @@ def add():
     harga_barang = int(input("masukan harga barang: "))
     stok_barang = int(input("masukan stok barang: "))
     
-    
     db.insert_item(kode_barang, nama_barang, harga_barang, stok_barang)
 
     

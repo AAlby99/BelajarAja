@@ -1,5 +1,6 @@
 nama_global = None
-def insert(db):   
+def insert(db):
+    print("----------------------------------------------------------------")   
     global nama_global 
     nama = input("\nMasukan Nama pemilik dana: ")
     pengedit = "Belum di edit"
